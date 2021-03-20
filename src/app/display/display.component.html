@@ -1,0 +1,20 @@
+<table class="table-hover bg-primary text-white">
+    <tr>
+        <th>Student Id</th>
+        <th>Student Name</th>
+        <th>Student Age</th>
+        <th>Course</th>
+        <th>Student Email</th>
+        <th>Student Contact</th>
+
+    </tr>
+    <tr *ngFor="let s of objs.sList">
+            <td>{{s.Id}}</td>
+            <td>{{s.Name}}</td>
+            <td>{{s.Age}}</td>
+            <td>{{s.Course}}</td>
+            <td>{{s.Email}}</td>
+            <td>{{s.Contact}}</td>
+            
+    </tr>
+</table>
