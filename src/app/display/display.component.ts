@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { StudentsService } from '../shared/student.service';
+import { StudentService } from '../shared/student.service';
 
 @Component({
   selector: 'app-display',
@@ -12,7 +12,7 @@ export class DisplayComponent implements OnInit {
   constructor(public objs:StudentService) { }
 
   ngOnInit(): void {
-    this.objs.studentList();
+    this.objs.StudentList();
   }
 
 }

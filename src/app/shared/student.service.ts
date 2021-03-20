@@ -10,7 +10,7 @@ export class StudentService {
   StudentList:Student[];
   constructor(private objhttp:HttpClient) { }
 
-  studentList(){
+  StudentList(){
     this.objhttp.get(this.StudentUrl+'/Students').toPromise().then(res=>this.StudentList=res as Student[]);
   }
 
