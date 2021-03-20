@@ -11,7 +11,7 @@ export class StudentService {
   constructor(private objhttp:HttpClient) { }
 
   StudentList(){
-    this.objhttp.get(this.StudentUrl+'/Students').toPromise().then(res=>this.StudentList=res as Student[]);
+    this.objhttp.get(this.StudentUrl+'/Students1').toPromise().then(res=>this.StudentList=res as Student[]);
   }
 
 }
